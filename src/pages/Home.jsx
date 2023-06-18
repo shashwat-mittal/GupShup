@@ -1,8 +1,14 @@
 import React from 'react'
-import { Login } from './Login'
+import Sidebar from '../components/Sidebar'
+import Chat from '../components/Chat'
 
 export const Home = () => {
   return (
-    <Login/>
+    <div className='home'>
+      <div className='container'>
+        <Sidebar/>
+        <Chat/>
+      </div>
+    </div>
   )
 }
