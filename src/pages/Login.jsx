@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 
-export const Login = () => {
+const Login = () => {
   const [err, setErr] = useState(false);
   const navigate = useNavigate();
 
@@ -33,5 +33,7 @@ export const Login = () => {
         <p>You don't have an account? <Link to="/register">Register</Link></p>
       </div>
     </div>
-  )
-}
+  );
+};
+
+export default Login;
